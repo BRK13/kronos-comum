@@ -1,6 +1,7 @@
 export type Anexo = {
     filename: string;
     content: string;
+    content_type?: string;
 };
 export type Carga = {
     from: string;

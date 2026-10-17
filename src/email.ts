@@ -2,7 +2,7 @@
 // Idempotency-Key (o Resend ignora a repetição da mesma chave por 24 h). Nunca lança: devolve o que houve e quem chama
 // decide. Base: jurimetria/src/lib/email/resend.ts, com `to` string ou lista, anexos e reply_to do acta.
 
-export type Anexo = { filename: string; content: string }; // content em base64
+export type Anexo = { filename: string; content: string; content_type?: string }; // content em base64
 
 export type Carga = {
   from: string;

@@ -1,7 +1,7 @@
 {
   "name": "kronos-comum",
-  "version": "0.1.0",
-  "description": "E-mail (Resend), env, /api/versao, moeda e sync-bounces comuns aos sites do Bruno. Instalado por github:BRK13/superorganic-hub#<tag> (sem registry).",
+  "version": "0.2.1",
+  "description": "E-mail (Resend), env, /api/versao, moeda, sync-bounces e LLM (OpenRouter) comuns aos sites do Bruno. Instalado por github:BRK13/superorganic-hub#<tag> (sem registry).",
   "type": "module",
   "license": "UNLICENSED",
   "private": false,
@@ -20,6 +20,10 @@
     "./moeda": {
       "types": "./dist/moeda.d.ts",
       "default": "./dist/moeda.js"
+    },
+    "./llm": {
+      "types": "./dist/llm.d.ts",
+      "default": "./dist/llm.js"
     },
     "./env": {
       "types": "./env.d.mts",
