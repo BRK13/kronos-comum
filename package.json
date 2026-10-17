@@ -1,0 +1,48 @@
+{
+  "name": "kronos-comum",
+  "version": "0.1.0",
+  "description": "E-mail (Resend), env, /api/versao, moeda e sync-bounces comuns aos sites do Bruno. Instalado por github:BRK13/superorganic-hub#<tag> (sem registry).",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    "./email": {
+      "types": "./dist/email.d.ts",
+      "default": "./dist/email.js"
+    },
+    "./versao": {
+      "types": "./dist/versao.d.ts",
+      "default": "./dist/versao.js"
+    },
+    "./moeda": {
+      "types": "./dist/moeda.d.ts",
+      "default": "./dist/moeda.js"
+    },
+    "./env": {
+      "types": "./env.d.mts",
+      "default": "./env.mjs"
+    },
+    "./sync-bounces": {
+      "types": "./sync-bounces.d.mts",
+      "default": "./sync-bounces.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "env.mjs",
+    "env.d.mts",
+    "sync-bounces.mjs",
+    "sync-bounces.d.mts"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^22"
+  }
+}
